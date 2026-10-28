@@ -161,3 +161,4 @@ export default function SurpriseSection({ friendNames = ["Bestest Nanban", "My F
     </section>
   );
 }
+

@@ -312,7 +312,7 @@ export default function GratitudeSection({
               }}
               className="px-8 py-3 rounded-full font-bold text-white bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 shadow-md transition-all hover:scale-105"
             >
-              Love You Bestie! 💖
+              Thank You Nanbanney! 💖
             </button>
           </div>
         </div>
@@ -320,3 +320,4 @@ export default function GratitudeSection({
     </section>
   );
 }
+

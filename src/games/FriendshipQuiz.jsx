@@ -202,3 +202,4 @@ export default function FriendshipQuiz({ questions = [] }) {
     </div>
   );
 }
+
