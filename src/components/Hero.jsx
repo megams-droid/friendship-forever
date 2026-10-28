@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Heart, Sparkles, Clock, Calendar, ArrowDown, Award, Send } from 'lucide-react';
+import { Heart, Sparkles, Clock, Calendar, ArrowDown, Award, Send, Music, Disc, ExternalLink } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { sound } from '../utils/soundEffects';
 
@@ -155,6 +155,52 @@ export default function Hero({
           <p className="mt-4 text-xs sm:text-sm text-slate-500 dark:text-purple-300 italic">
             ...and counting every single heartbeat of this timeless friendship! 💖
           </p>
+        </div>
+
+        {/* Dedicated Spotify Song Card */}
+        <div className="glass-panel max-w-2xl mx-auto mt-8 p-5 sm:p-6 rounded-3xl border border-pink-200/90 dark:border-purple-800/80 shadow-xl relative text-left">
+          <div className="flex items-center justify-between mb-3 pb-2 border-b border-pink-100 dark:border-purple-800/60">
+            <div className="flex items-center gap-2">
+              <div className="w-8 h-8 rounded-full bg-[#1DB954] text-white flex items-center justify-center shadow-md">
+                <Music className="w-4 h-4 animate-bounce" />
+              </div>
+              <div>
+                <h4 className="text-sm font-bold text-slate-800 dark:text-white flex items-center gap-1.5">
+                  <span>Our Friendship Song: Magale 🎵</span>
+                  <span className="text-[10px] px-2 py-0.5 rounded-full bg-[#1DB954]/20 text-[#1DB954] font-extrabold uppercase">
+                    Spotify
+                  </span>
+                </h4>
+                <p className="text-[11px] text-slate-500 dark:text-purple-300">
+                  Press play and listen together while reliving our memories!
+                </p>
+              </div>
+            </div>
+
+            <a
+              href="https://open.spotify.com/track/4DUnlYjsW1anjSiyfUTo5j?si=311c9b2e23224895"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden sm:flex items-center gap-1 text-xs font-bold text-[#1DB954] hover:underline"
+            >
+              <span>Open in Spotify</span>
+              <ExternalLink className="w-3.5 h-3.5" />
+            </a>
+          </div>
+
+          <div className="rounded-2xl overflow-hidden shadow-inner bg-black/5">
+            <iframe
+              style={{ borderRadius: '16px' }}
+              src="https://open.spotify.com/embed/track/4DUnlYjsW1anjSiyfUTo5j?utm_source=generator&theme=0"
+              width="100%"
+              height="152"
+              frameBorder="0"
+              allowFullScreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+              title="Spotify Embed: Magale"
+            />
+          </div>
         </div>
 
         {/* Little scroll-down teaser */}

@@ -53,8 +53,8 @@ export const defaultFriendshipData = {
     {
       id: 4,
       icon: "HeartHandshake",
-      title: "Zero Judgment, 100% Love",
-      description: "With you, I can be my truest, most authentic, silly self, and you love me even more for it."
+      title: "Pure Trust & Understanding",
+      description: "With you, I can always be my truest, most authentic self, knowing you will always understand."
     },
     {
       id: 5,

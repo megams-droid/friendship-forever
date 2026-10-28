@@ -119,7 +119,7 @@ export default function SurpriseSection({ friendNames = ["Bestest Nanban", "My F
                 {friendNames.join(' & ')}
               </div>
               <p className="text-sm sm:text-base leading-relaxed max-w-xl mx-auto font-sans">
-                have officially earned the title of <strong>Forever Soulmate Friends</strong>. Granted unlimited hugs, lifetime priority listening, zero-judgment therapy sessions, and 100% unconditional loyalty.
+                have officially earned the title of <strong>Forever Soulmate Friends</strong>. Granted unlimited hugs, lifetime priority listening, endless laughs, and unconditional loyalty.
               </p>
             </div>
 

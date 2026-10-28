@@ -8,6 +8,7 @@ import SurpriseSection from './components/SurpriseSection';
 import Footer from './components/Footer';
 import FloatingHearts from './components/FloatingHearts';
 import CustomizeModal from './components/CustomizeModal';
+import SpotifyPlayer from './components/SpotifyPlayer';
 import { defaultFriendshipData } from './data/friendshipData';
 
 export default function App() {
@@ -20,7 +21,11 @@ export default function App() {
   const [siteData, setSiteData] = useState(() => {
     try {
       const saved = localStorage.getItem('friendship_site_data');
-      if (saved) return JSON.parse(saved);
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        parsed.reasonsWhySpecial = defaultFriendshipData.reasonsWhySpecial;
+        return parsed;
+      }
     } catch {}
     return defaultFriendshipData;
   });
@@ -133,6 +138,9 @@ export default function App() {
 
       {/* Footer */}
       <Footer />
+
+      {/* Floating Spotify Player for Magale */}
+      <SpotifyPlayer />
 
       {/* Customization Modal */}
       <CustomizeModal
