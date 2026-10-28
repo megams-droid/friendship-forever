@@ -73,9 +73,6 @@ export default function Navbar({
             <span className="font-extrabold text-lg sm:text-xl tracking-tight bg-gradient-to-r from-pink-600 via-rose-500 to-purple-600 bg-clip-text text-transparent">
               Our Friendship Forever
             </span>
-            <span className="text-[10px] uppercase font-bold tracking-widest text-pink-400 dark:text-purple-300">
-              Nanban Love 💖
-            </span>
           </div>
         </a>
 
